@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(112, 105, 105)
+}
+
+button {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.calculator {
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    background-color: hsl(0, 0%, 25%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5%;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+
+#display {
+    width: 500px;
+    border: none;
+    background-color: hsl(0, 0%, 50%);
+    color: white;
+}
+
+#plus, #subtract, #multiply, #divide {
+    background-color: lightpink;
+}
+
+#
