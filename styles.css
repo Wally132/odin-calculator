@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
-    background-color: rgb(112, 105, 105)
+    background-color: rgb(164, 216, 255)
 }
 
 button {
@@ -13,10 +13,14 @@ button {
     font-size: 30px;
 }
 
+button:hover {
+    background-color: bisque;
+}
+
 .calculator {
     margin-top: 50px;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 700px;
     background-color: hsl(0, 0%, 25%);
     display: flex;
     flex-wrap: wrap;
@@ -30,18 +34,44 @@ button {
     height: 350px;
     flex-wrap: wrap;
     margin-top: 5px;
+    padding: 20px;
     
 }
 
 #display {
-    width: 500px;
+    padding: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    width: 600px;
     border: none;
-    background-color: hsl(0, 0%, 50%);
-    color: white;
+    background-color: hsl(0, 0%, 95%);
+    color: black;
+    border-radius: 5%;
 }
 
-#plus, #subtract, #multiply, #divide {
+.operator {
     background-color: lightpink;
 }
 
-#
+#plus:hover, #subtract:hover, #multiply:hover, #divide:hover {
+    background-color: rgb(252, 211, 217);
+}
+
+#calculate, #decimal, #negative {
+    background-color: pink;
+}
+
+#calculate:hover, #decimal:hover, #negative:hover {
+    background-color: rgb(252, 211, 217);
+}
+
+
+#clear {
+    background-color: lightskyblue;
+}
+
+
+#clear:hover {
+    background-color: rgb(233, 118, 118)
+}
