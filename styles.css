@@ -2,8 +2,19 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
-    background-color: rgb(164, 216, 255)
+    background-color: rgb(164, 216, 255);
+    display: flex;
+    flex-direction: column;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif, serif;
+    color: black;
+}
+
 
 button {
     border-radius: 50%;
@@ -17,10 +28,15 @@ button:hover {
     background-color: bisque;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .calculator {
-    margin-top: 50px;
     width: 600px;
-    height: 700px;
+    height: 750px;
     background-color: hsl(0, 0%, 25%);
     display: flex;
     flex-wrap: wrap;
@@ -33,18 +49,19 @@ button:hover {
     width: 400px;
     height: 350px;
     flex-wrap: wrap;
-    margin-top: 5px;
+    margin-top: -150px;
     padding: 20px;
     
 }
 
 #display {
-    padding: 0;
+    padding: 10px;
     text-align: center;
     font-size: 40px;
     font-weight: 900;
+    height: 100px;
     width: 600px;
-    border: none;
+    border: solid;
     background-color: hsl(0, 0%, 95%);
     color: black;
     border-radius: 5%;
