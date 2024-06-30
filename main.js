@@ -90,6 +90,13 @@ clearButton.addEventListener("click", () => {
     operator = "";
 });
 
+
+// Check if num1, operator, and num2 have values. 
+// If true - run operate function.
+// num1 turns into new number after function.
+// num2 resets.
+// operator resets.
+
 const equalButton = document.getElementById("calculate");
 equalButton.addEventListener("click", () => {
     if (num1 !== "" && operator !== "" && num2 !== "") {
@@ -100,13 +107,12 @@ equalButton.addEventListener("click", () => {
     }
 });
 
-
-
-// Check if num1, operator, and num2 have values. 
-// If true - run operate function.
-// num1 turns into new number after function.
-// num2 resets.
-// operator resets.
+// Negative button to convert current number to negative.
+// Checks if display panel is empty.
+// If true - converts current number string into number value as new currentValue variable.
+// Then converts to negative.
+// If operator is empty - The number in display becomes num1.
+// Then num2 after operator is selected.
 
 const negativeButton = document.getElementById("negative");
 negativeButton.addEventListener("click", () => {
@@ -120,14 +126,13 @@ negativeButton.addEventListener("click", () => {
     }
 })
 
-// Negative button to convert current number to negative.
-// Checks if display panel is empty.
-// If true - converts current number string into number value as new currentValue variable.
-// Then converts to negative.
-// If operator is empty - The number in display becomes num1.
-// Then num2 after operator is selected.
+
 
 // Decimal button to add decimal point to the current number.
+// Check if operator is empty - This is num1;
+// If num1 does not include a . then it is usable. 
+// Clicking the button appends a decimal to display panel which is num1;
+// Same for num2 after an operator is selected.
 
 const decimalButton = document.getElementById("decimal");
 decimalButton.addEventListener("click", () => {
@@ -143,3 +148,14 @@ decimalButton.addEventListener("click", () => {
         }
     }
 });
+
+// Add backspace button
+const backspaceButton = document.getElementById("backspace");
+backspaceButton.addEventListener("click", () => {
+    displayPanel.value = displayPanel.value.slice(0, -1);
+    if (operator === "") {
+        num1 = num1.slice(0, -1);
+    } else {
+        num2 = num2.slice(0, -1);
+    }
+})
