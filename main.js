@@ -84,8 +84,8 @@ operatorButtons.forEach(button => {
 
 const clearButton = document.getElementById("clear");
 clearButton.addEventListener("click", () => {
-    let num1 = "";
-    let num2 = "";
+    num1 = "";
+    num2 = "";
     displayPanel.value = "";
     operator = "";
 });
@@ -124,7 +124,7 @@ negativeButton.addEventListener("click", () => {
     } else {
         num2 = displayPanel.value;
     }
-})
+});
 
 
 
@@ -158,4 +158,4 @@ backspaceButton.addEventListener("click", () => {
     } else {
         num2 = num2.slice(0, -1);
     }
-})
+});
